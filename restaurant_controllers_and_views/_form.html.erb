@@ -1,0 +1,19 @@
+
+
+<%= form_for @restautant do |r| %>
+	<div>
+		<%= r.label :name %><br>
+		<%= r.text_field :name %>
+	</div>
+	<div>
+		<%= r.label :address %><br>
+		<%= r.text_field :address %>
+	</div>
+	<div>
+		<%= r.label :cuisine %><br>
+		<%= r.text_field :cuisine %>
+	</div>
+	<div>
+		<%= r.submit %>
+	</div>	
+<% end %>

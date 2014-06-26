@@ -1,0 +1,15 @@
+<h1>restaurants#index</h1>
+<h1>Seat Yo-Self</h1>
+<h2>Refined Eating</h2>
+<br>
+<% @restaurants.each do |r| %>
+	<div>
+		<p><%= r.name %></p>
+		<p><%= r.address %></p>
+		<p><%= r.cuisine %></p>
+	</div>
+	<div>
+		<%= link_to "Check out #{r.name}", product_path(p.id) %>
+	</div>
+<% end %>
+

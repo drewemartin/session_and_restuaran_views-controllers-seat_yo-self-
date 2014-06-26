@@ -1,0 +1,7 @@
+<h1>restaurants#show</h1>
+
+<p><%= @restaurant.name %></p>
+<p><%= @restaurant.address %></p>
+<p><%= @restaurant.cuisine %></p>
+<p><%= link_to "Edit #{@restaurant.name}", edit_restaurant_path(@restaurant.id) %></p>
+<p><%= link_to "Back to Restaurants", restaurants_path %></p>
