@@ -1,6 +1,17 @@
 
 
 <%= form_for @restautant do |r| %>
+	<% if @restautant.errors.any? %>
+		<div>
+			<p>Form is invalid</p>
+		</div>
+		<ul>
+			<% for message in @user.errors.full_messages %>
+			<li><%= message %></li>
+			<% end %>
+		</ul>
+	<% end %>
+
 	<div>
 		<%= r.label :name %><br>
 		<%= r.text_field :name %>
